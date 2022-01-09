@@ -5,16 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Forecast</title>
+    <link rel="stylesheet" href="style/main.css">
 </head>
 <body>
-    <div id="city"></div>
-    <div id="country"></div>
-    <div id="date"></div>
-    <div id="condition"></div>
-    <div id="icon"></div>
-    <div><span id="temp"></span>&deg;</div>
-    <div><span id="feelslike"></span>&deg;</div>    
-    <div><span id="humidity"></span>%</div>
+    <div class="wrapper">
+        <header class="header">
+            <div id="city"></div>
+            <div id="country"></div>
+            <div id="date"></div>
+        </header>
+        <div class="main">
+            <div class="main__primary-wrap">
+                <div id="icon"></div>
+                <div id="condition"></div>
+            </div>
+            <div class="main__secondary-wrap">
+                <div class="main-secondary-wrap__item main__temp"><span id="temp"></span>&deg;</div>
+                <div class="main-secondary-wrap__item">Feelslike: <span id="feelslike"></span>&deg;</div>    
+                <div class="main-secondary-wrap__item">Humidity: <span id="humidity"></span>%</div>
+            </div>
+        </div>
+    </div>
     <script src="js/main.js"></script>    
 </body>
 </html>

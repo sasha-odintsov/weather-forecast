@@ -14,36 +14,3 @@ promise
         document.getElementById("feelslike").innerHTML = data.current.feelslike_c;
         document.getElementById("humidity").innerHTML = data.current.humidity;
     });
-    
-    
-    
-    
-// const promise = fetch("https://rickandmortyapi.com/api/character");
-
-// let characterList = [];
-
-// promise
-//   .then(function (response) {
-//     return response.json();
-//   })
-//   .then(function (data) {
-//     characterList = data.results;
-//     characterList.forEach(function (element) {
-//         document.getElementById("conteiner").insertAdjacentHTML(
-//           "beforeend",
-//           `
-//             <tr>
-//             <td>${element.name}</td>
-//             <td>  
-//               <div>${element.species}</div>
-//               <div>${element.status}</div>
-//             </td>
-//             <td>
-//               <div>${element.gender}</div>
-//               <div>${element.type}</div>
-//             </td>
-//             </tr>
-//             `
-//         );
-//       });    
-//   });
