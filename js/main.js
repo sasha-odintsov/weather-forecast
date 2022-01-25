@@ -1,8 +1,8 @@
-const promise = fetch("http://api.weatherapi.com/v1/current.json?key=b677082ac19f45aca07212645220401&q=Kiev&aqi=no");
+const promise = fetch("https://api.weatherapi.com/v1/current.json?key=b677082ac19f45aca07212645220401&q=Kiev&aqi=no");
 
 promise
-    .then((response) => response.json())    
-    .then((data) => {       
+    .then((response) => response.json())
+    .then((data) => {
         console.log(data);
         document.getElementById("city").innerHTML = data.location.name;
         document.getElementById("country").innerHTML = data.location.country;
