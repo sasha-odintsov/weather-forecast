@@ -1,5 +1,5 @@
 /* eslint-disable linebreak-style */
-(function () {
+(() => {
   const promise = fetch('https://api.weatherapi.com/v1/current.json?key=b677082ac19f45aca07212645220401&q=Kiev&aqi=no');
 
   promise
@@ -16,4 +16,4 @@
       document.getElementById('feelslike').innerHTML = data.current.feelslike_c;
       document.getElementById('humidity').innerHTML = data.current.humidity;
     });
-}());
+})();
