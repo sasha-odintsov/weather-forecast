@@ -10,6 +10,7 @@ body {
 
 .wrapper {
   width: 40%;
+  max-width: 500px;
   margin: 20px auto;
   border-radius: 10px;
   background: linear-gradient(40deg, #59d8d8, #0a4053);
@@ -49,5 +50,15 @@ body {
 
 .wrapper .main .main__primary-wrap .main-secondary-wrap__item, .wrapper .main .main__secondary-wrap .main-secondary-wrap__item {
   padding: 5px;
+}
+
+@media screen and (max-width: 599px) {
+  .wrapper {
+    width: 95%;
+  }
+  .wrapper .main {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 /*# sourceMappingURL=main.css.map */
